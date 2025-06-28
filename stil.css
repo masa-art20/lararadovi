@@ -1,0 +1,109 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, #0b1c2c, #132d46);
+    font-family: 'Poppins', sans-serif;
+    color: #f0e9e5;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #6e1e2a, #0b1c2c);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #fdfdfd;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #e6d9d6;
+}
+
+/* Gallery container */
+.gallery {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Row of images */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.row img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+    background-color: #1c2e45;
+}
+
+.row img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+}
+.row-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #f0e9e5;
+    margin: 30px auto -20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+.row-1 img.horizontal {
+    max-width: 700px;  /* šira slika */
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; /* centrira sliku unutar reda */
+}
+
+.row-1 img.horizontal:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255,255,255,0.15);
+}
+
+/* Footer */
+footer {
+    background-color: #0a1724;
+    text-align: center;
+    color: #c9c9c9;
+    padding: 30px;
+    font-size: 0.9rem;
+    margin-top: 60px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
